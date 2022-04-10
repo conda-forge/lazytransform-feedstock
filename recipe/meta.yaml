@@ -56,3 +56,5 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    # Maintainer(s) from upstream package repo
+    - AutoViML
