@@ -153,5 +153,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@AutoViML](https://github.com/AutoViML/)
 * [@sugatoray](https://github.com/sugatoray/)
 

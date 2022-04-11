@@ -11,7 +11,7 @@ source:
   sha256: 4002bf98a3f06a5f6da94dcb010e400b6867c22502067a00b4135efadaa31549
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -56,3 +56,5 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    # Maintainer(s) from upstream package repo
+    - AutoViML
