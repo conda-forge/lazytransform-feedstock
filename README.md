@@ -1,22 +1,16 @@
-About lazytransform
-===================
+About lazytransform-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lazytransform-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/AutoViML/lazytransform
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lazytransform-feedstock/blob/main/LICENSE.txt)
-
-Summary: Automatically build data and model pipelines using scikit-learn in a single line of code
-
-Development: https://github.com/AutoViML/lazytransform
-
-Documentation: https://github.com/AutoViML/lazytransform
+Summary: Clean your data using a scikit-learn transformer in a single line of code
 
 Automatically transform all categorical, date-time, NLP variables in your data set
 to numeric in a single line of code for any data set any size.
-
-PyPI: [https://pypi.org/project/lazytransform](https://pypi.org/project/lazytransform)
 
 
 Current build status
@@ -105,7 +99,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
@@ -154,5 +148,6 @@ Feedstock Maintainers
 =====================
 
 * [@AutoViML](https://github.com/AutoViML/)
+* [@mfansler](https://github.com/mfansler/)
 * [@sugatoray](https://github.com/sugatoray/)
 
