@@ -30,6 +30,7 @@ requirements:
     - scikit-learn >=0.24.2,<=1.2.2
     - scipy <1.11.0
     - tqdm >=4.61.1
+    - xgboost
 
 test:
   imports:
@@ -51,6 +52,6 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    - mfansler
     # Maintainer(s) from upstream package repo
     - AutoViML
-    - mfansler
