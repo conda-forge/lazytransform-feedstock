@@ -1,5 +1,5 @@
 {% set name = "lazytransform" %}
-{% set version = "1.16" %}
+{% set version = "1.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lazytransform-{{ version }}.tar.gz
-  sha256: f2036c9726ec0310dab2a4d6776ec295bebc86b70a0bb83a024bc1b4f87adf4d
+  sha256: 49fe4c19148b8e86624852616579488349ae94af67d7dc030f20bb4bfdac500f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -30,7 +30,7 @@ requirements:
     - scikit-learn >=0.24.2,<=1.2.2
     - scipy <1.11.0
     - tqdm >=4.61.1
-    - xgboost
+    - xgboost >=1.6
 
 test:
   imports:
@@ -54,5 +54,4 @@ extra:
   recipe-maintainers:
     - sugatoray
     - mfansler
-    # Maintainer(s) from upstream package repo
     - AutoViML
