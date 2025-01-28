@@ -1,13 +1,13 @@
 {% set name = "lazytransform" %}
-{% set version = "1.16" %}
+{% set version = "1.17" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lazytransform-{{ version }}.tar.gz
-  sha256: f2036c9726ec0310dab2a4d6776ec295bebc86b70a0bb83a024bc1b4f87adf4d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lazytransform-{{ version }}.tar.gz
+  sha256: 49fe4c19148b8e86624852616579488349ae94af67d7dc030f20bb4bfdac500f
 
 build:
   number: 0
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - category_encoders >=2.6.2
     - lightgbm >=3.2.1
     - matplotlib-base >=3.4.2
@@ -30,7 +30,7 @@ requirements:
     - scikit-learn >=0.24.2,<=1.2.2
     - scipy <1.11.0
     - tqdm >=4.61.1
-    - xgboost
+    - xgboost >=1.6
 
 test:
   imports:
@@ -39,6 +39,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/AutoViML/lazytransform
@@ -53,5 +54,4 @@ extra:
   recipe-maintainers:
     - sugatoray
     - mfansler
-    # Maintainer(s) from upstream package repo
     - AutoViML
