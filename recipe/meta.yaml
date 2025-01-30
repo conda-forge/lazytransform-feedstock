@@ -1,5 +1,5 @@
 {% set name = "lazytransform" %}
-{% set version = "1.17" %}
+{% set version = "1.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lazytransform-{{ version }}.tar.gz
-  sha256: 49fe4c19148b8e86624852616579488349ae94af67d7dc030f20bb4bfdac500f
+  sha256: f3ef534bfca70961674891221fa8aa0c344c5953b46ca6688f46f19c1e8bbf92
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
